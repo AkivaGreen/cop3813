@@ -1,0 +1,54 @@
+:root {
+  --nav-color: #1F3161;
+  --border-color: #5170C8;
+  --background-color: #C4CBD1;
+  --red-color: #CA1D35;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+nav{
+  background-color: var(--nav-color);
+}
+
+h1, h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.resume-container{
+  margin-top: 75px;
+  padding-bottom:150px;
+}
+
+.photo-container{
+
+}
+
+#profile-photo{
+  max-width: 300px;
+  height: auto;
+  border: 5px solid var(--red-color);
+  border-radius: 25%;
+  margin-bottom: 20px;
+}
+
+.item-img{
+  max-width: 150px;
+  height: auto;
+}
+
+.location-right{
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+  margin-top: -125px; /* negative value of footer height */
+  height: 175px;
+  clear:both;
+  background-color: var(--nav-color);
+  color: white;
+}
