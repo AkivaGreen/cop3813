@@ -33,7 +33,8 @@
     </nav>
     <div class="container-fluid resume-container">
       <div class="photo-container">
-        <img src="assets/images/profile_photo.jpg" alt="Profile Picture" height="300">
+        <img src="assets/images/profile_photo.jpg" alt="Profile Picture" height="300"
+        id="profile-photo" class="mx-auto d-block">
         <h1>
           <a href="http://www.akivagreen.com" target="_blank">
             Akiva Green
@@ -47,9 +48,16 @@
         </p>
       </div>
       <div class="education-container" id="education">
-        <h2>Education</h2>
+        <div class="row">
+          <div class="col">
+            <h2>Education</h2>
+          </div>
+        </div>
         <div class="row education-item">
-          <img src="assets/images/fau_logo.png" alt="FAU Logo" height="200">
+          <div class="col-2">
+            <img src="assets/images/fau_logo.png" alt="FAU Logo" height="200"
+            class="item-img">
+          </div>
           <div class="col">
             <h4>
               <a href="https://www.fau.edu" target="_blank">
@@ -58,15 +66,23 @@
             </h4>
             <p>Bachelor of Science in Computer Engineering<p>
           </div>
-          <div class="col">
+          <div class="col location-right">
             <p>Boca Raton, Florida</p>
           </div>
         </div>
       </div>
       <div class="work-container" id="experience">
-        <h2>Work Experience</h2>
-        <div class="row work-item">
+        <div class="row">
           <div class="col">
+            <h2>Work Experience</h2>
+          </div>
+        </div>
+        <div class="row work-item">
+          <div class="col-2">
+            <img src="assets/images/fau_logo.png" alt="FAU Logo"
+            class="item-img">
+          </div>
+          <div class="col-7">
             <h4>
               <a href="http://fau.edu/student/technology/" target="_blank">
                 Student Affairs IT - Florida Atlantic University
@@ -92,12 +108,22 @@
               </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col location-right">
             <p>Boca Raton, Florida</p>
           </div>
         </div>
         <div class="row work-item">
-          <div class="col">
+          <div class="col-2">
+            <img src="assets/images/umass_transit_photo.jpg" alt="UMass Transit"
+            class="item-img">
+          </div>
+          <div class="col-7">
+            <h4>
+              <a href="https://www.umass.edu/transportation/transit" target="_blank">
+                Web Developer - UMass Amherst Transportation Services
+              </a>
+            </h4>
+            <p>May 2016 - December 2017</p>
             <ul>
               <li>Contributed to a Ruby on Rails agile web development team.</li>
               <li>
@@ -107,13 +133,17 @@
               </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col location-right">
             <p>Amherst, Massachusetts</p>
           </div>
         </div>
       </div>
       <div class="project-container" id="project">
-        <h2>Projects</h2>
+        <div class="row">
+          <div class="col">
+            <h2>Projects</h2>
+          </div>
+        </div>
         <div class="row project-item">
           <div class="col">
             <h4>
@@ -170,6 +200,11 @@
         </div>
       </div>
       <div class="membership-container" id="membership">
+        <div class="row">
+          <div class="col">
+            <h2>Membership</h2>
+          </div>
+        </div>
         <div class="row membership-item">
           <div class="col">
             <h4>Tau Sigma Honor Society, FAU</h4>
@@ -180,7 +215,6 @@
           </div>
         </div>
         <div class="row membership-item">
-          <h2>Membership</h2>
           <div class="col">
             <h4>National Society of Black Engineers, FAU</h4>
             <p>Member</p>
@@ -225,12 +259,12 @@
         </div>
       </div>
     </div>
-    <footer class="footer overflow-hidden fixed-bottom">
+    <footer class="footer">
       <div class="container-fluid">
         <div class="row">
           <div class="col">
             <h3>About</h3>
-            <p>
+            <p class="text-justify">
               Akiva Green's Portfolio is a web-based view of his resume.
             </p>
           </div>
