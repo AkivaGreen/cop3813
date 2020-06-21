@@ -10,48 +10,70 @@
     <title>Akiva Green - Portal</title>
   </head>
   <body>
-    <div class="container-fluid main-container">
-      <div class="row header-row">
-        <div class="col">
-          <h1>Akiva Green's Project Portal</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Akiva Green</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="assets/images/project_1.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">
-              This project is a basic HTML resume (portfolio) with minimal
-              CSS (no Bootstrap).
-            </p>
-            <a href="http://lamp.cse.fau.edu/~greena2015/p1" class="btn btn-primary"
-            target="_blank">
-              Click Here
+    </nav>
+    <div class="container-fluid main-container">
+      <header class="jumbotron my-4">
+        <h1 class="display-3">Akiva Green's Project Portal</h1>
+        <p class="lead">
+          The following cards are links to my projects for Intro to Internet Computing.
+        </p>
+      </header>
+      <div class="container project-container">
+        <div class="card-deck">
+          <div class="card">
+            <a href="http://lamp.cse.fau.edu/~greena2015/p1" target="_blank">
+              <img class="card-img-top" src="assets/images/project_1.png" alt="Card image cap">
             </a>
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">
+                This project is a basic HTML resume (portfolio) with minimal
+                CSS (no Bootstrap).
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Submitted: May 31st, 2020</small>
+            </div>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="assets/images/project_2.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">
-              This project is a an updated version of Project 1 through the
-              inclusion of Bootstrap.
-            </p>
-            <a href="http://lamp.cse.fau.edu/~greena2015/p2" class="btn btn-primary"
-            target="_blank">
-              Click Here
+          <div class="card">
+            <a href="http://lamp.cse.fau.edu/~greena2015/p2" target="_blank">
+              <img class="card-img-top" src="assets/images/project_2.png" alt="Card image cap">
             </a>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">
+                This project is a an updated version of Project 1 through the
+                inclusion of Bootstrap.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Submitted: Jun 19th, 2020</small>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Akiva Green Portal 2020</p>
+      </div>
+      <!-- /.container -->
+    </footer>
   </body>
 </html>

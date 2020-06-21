@@ -1,0 +1,17 @@
+:root {
+  --background-color: #fafafa;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.main-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header-row {
+  text-align: center;
+  margin-bottom: 25px;
+}
