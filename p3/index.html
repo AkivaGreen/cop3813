@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/application.css" type="text/css">
+    <script type="text/javascript" src="assets/javascript/application.js"></script>
+    <title>Project 3</title>
+  </head>
+  <body>
+    <div class="container-fluid main-container">
+      <div class="row header-row">
+        <div class="col">
+          <h1>Statistical Analysis Calculator</h1>
+        </div>
+      </div>
+      <div class="row explain-row">
+        <div class="col">
+          <p>Enter 3 Numbers to Get Their Max, Min, Range, Median, and Mean</p>
+        </div>
+      </div>
+      <form action="javascript: calculateStatAnalysis();" id="calculate-numbers-form" autocomplete="off">
+        <div class="form-row">
+          <div class="from-group col">
+            <label for="number-1">Number 1</label>
+            <input type="number" name="number_1" id="number-1" class="form-control" required>
+          </div>
+          <div class="from-group col">
+            <label for="number-2">Number 2</label>
+            <input type="number" name="number_2" id="number-2" class="form-control" required>
+          </div>
+          <div class="from-group col">
+            <label for="number-3">Number 3</label>
+            <input type="number" name="number_3" id="number-3" class="form-control" required>
+          </div>
+        </div>
+        <input type="submit" value="Calculate" id="calculate-numbers" class="btn btn-primary">
+      </form>
+      <div id="results">
+      </div>
+    </div>
+  </body>
+</html>
