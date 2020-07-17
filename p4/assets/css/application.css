@@ -1,0 +1,26 @@
+:root {
+  --background-color: #195e83;
+  --container-color: white;
+}
+
+body {
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-container {
+  background-color: var(--container-color);
+  border-radius: 10px;
+  max-width: 75%;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+#current-player {
+  margin-bottom: 30px;
+}
