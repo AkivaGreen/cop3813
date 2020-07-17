@@ -45,6 +45,7 @@ $(function () {
         score = {"X": 0, "O": 0};
         moves = 0;
         squares.forEach(function (square) {square.html(EMPTY);});
+        document.getElementById("current-player").innerHTML = "<h4>Current Player is: X</h4>";
     },
 
     /*
@@ -82,6 +83,7 @@ $(function () {
             startNewGame();
         } else {
             turn = turn === "X" ? "O" : "X";
+            document.getElementById("current-player").innerHTML = "<h4>Current Player is: "+turn+"</h4>";
         }
     },
 
