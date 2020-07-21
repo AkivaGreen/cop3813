@@ -13,16 +13,19 @@ body {
   background-color: var(--container-color);
   border: 5px solid var(--border-color);
   border-radius: 10px;
+  margin-top: 50px;
 }
 
 .main-container {
   max-width: 75%;
-  margin-top: 50px;
   padding: 20px;
 }
 
 .results-container {
   max-width: 50%;
-  margin-top: 50px;
   padding: 20px;
+}
+
+.header-row {
+  margin-bottom: 10px;
 }

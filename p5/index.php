@@ -28,6 +28,11 @@
   ?>
   <body>
     <div class="container-fluid main-container">
+      <div class="row header-row">
+        <div class="col">
+          <h1>Guessing Game</h1>
+        </div>
+      </div>
       <form method="post" action="">
         <div class="form-row" id="prompt">
           <div class="form-group col">
