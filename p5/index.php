@@ -15,15 +15,14 @@
   </head>
   <?php
   $correct_guess = "";
+  $randNum = 0;
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $randNum = rand(1, 10);
     if ($randNum == $_POST["num"]) {
       $correct_guess = true;
-      echo "<h1>Correct!</h1>";
     }
     else {
       $correct_guess = false;
-      echo "<p>No, I was thinking of $randNum.</p>";
     }
   }
   ?>
@@ -44,7 +43,26 @@
       </form>
     </div>
     <?php if($_SERVER["REQUEST_METHOD"] == "POST"){ ?>
-      <p>This Works!!! <?= $correct_guess ?></p>
+      <div class="container-fluid results-container">
+        <?php if($correct_guess){ ?>
+          <div class="row" id="#correct-guess">
+            <div class="col">
+              <h2>Correct Guess!!!</h2>
+            </div>
+          </div>
+        <?php } else { ?>
+          <div class="row" id="#correct-guess">
+            <div class="col">
+              <h2>Incorrect Guess!!!</h2>
+            </div>
+          </div>
+          <div class="row" id="#incorrect-guess">
+            <div class="col">
+              <p>The number was <?= $randNum ?></p>
+            </div>
+          </div>
+        <?php } ?>
+      </div>
     <?php } ?>
   </body>
 </html>
