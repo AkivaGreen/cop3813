@@ -1,0 +1,31 @@
+:root {
+  --background-color: #c8ccd3;
+  --border-color: #b21e3a;
+  --container-color: white;
+}
+
+body {
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.container-fluid {
+  background-color: var(--container-color);
+  border: 5px solid var(--border-color);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.main-container {
+  max-width: 75%;
+  padding: 20px;
+}
+
+.results-container {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.header-row {
+  margin-bottom: 10px;
+}
